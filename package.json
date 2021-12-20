@@ -4,7 +4,8 @@
   "description": "skydive-micro-blog",
   "main": "index.js",
   "scripts": {
-    "build": "rimraf dist && tsc",
+    "build": "rimraf dist && tsc && npm run copy-files",
+    "copy-files": "cp -rf ./src/static ./dist/static",
     "preserve": "npm run build",
     "serve": "cross-env NODE_ENV=development concurrently \"tsc --watch\" \"nodemon -q dist/index.js\"",
     "prestart": "npm run build",

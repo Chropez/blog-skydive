@@ -11,6 +11,7 @@ import posts from "./routes/posts";
 import users from "./routes/users";
 import adminLogin from "./routes/adminLogin";
 import ejs from "ejs";
+import path from "path";
 
 const NAMESPACE = "Server";
 const router: Express = express();
@@ -56,7 +57,7 @@ router.use((req, res, next) => {
 
 /* EJS Html rendering */
 router.engine("html", require("ejs").renderFile);
-router.use(express.static("static"));
+router.use('/static', express.static(path.join(__dirname, "static")));
 
 /* Routes */
 router.use("/healthcheck", healthcheck);
