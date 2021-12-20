@@ -1,0 +1,19 @@
+{
+  "name": "blog-skydive",
+  "version": "1.0.0",
+  "description": "skydive-micro-blog",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/biaandersson/blog-skydive.git"
+  },
+  "author": "tba",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/biaandersson/blog-skydive/issues"
+  },
+  "homepage": "https://github.com/biaandersson/blog-skydive#readme"
+}
